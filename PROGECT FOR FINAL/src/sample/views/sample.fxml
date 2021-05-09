@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: #2E3348;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.javafiles.Controller">
+   <children>
+      <TextField fx:id="login_field" layoutX="236.0" layoutY="204.0" prefHeight="26.0" prefWidth="363.0" promptText="Логин" style="-fx-background-color: #fff; -fx-border-color: silver; -fx-border-radius: 5px;">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="password_field" layoutX="236.0" layoutY="251.0" prefHeight="26.0" prefWidth="363.0" promptText="Пароль" style="-fx-background-color: #fff; -fx-border-color: silver; -fx-border-radius: 5px;">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </PasswordField>
+      <Label contentDisplay="CENTER" layoutX="294.0" layoutY="118.0" prefHeight="27.0" prefWidth="248.0" text="Авторизация" textFill="#8d8d8d">
+         <font>
+            <Font name="Garuda Bold" size="31.0" />
+         </font>
+      </Label>
+      <Button fx:id="authSigninButton" layoutX="478.0" layoutY="320.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="121.0" style="-fx-background-color: BECEDD;" text="Войти">
+         <font>
+            <Font name="Garuda Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="LoginSignUpButton" layoutX="236.0" layoutY="320.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="172.0" style="-fx-background-color: BECEDD;" text="Зарегистрироваться">
+         <font>
+            <Font name="Garuda Bold" size="13.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" layoutX="296.0" layoutY="29.0" prefHeight="70.0" prefWidth="225.0" text="To Do" textAlignment="CENTER">
+         <font>
+            <Font name="Ubuntu Mono Bold Italic" size="60.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.5" focusDistance="-1.1102230246251565E-16" radius="0.40476190476190477">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+   </children>
+</AnchorPane>

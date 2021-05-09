@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: #2E3348;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.javafiles.SignUpController">
+    <children>
+          <TextField fx:id="signUpName" layoutX="46.0" layoutY="178.0" prefHeight="35.0" prefWidth="322.0" promptText="Имя" style="-fx-background-color: #fff; -fx-border-color: silver; -fx-border-radius: 5px;">
+              <font>
+                  <Font size="17.0" />
+              </font>
+          </TextField>
+          <TextField fx:id="signUpLastname" layoutX="46.0" layoutY="233.0" prefHeight="35.0" prefWidth="322.0" promptText="Фамилия" style="-fx-background-color: #fff; -fx-border-color: silver; -fx-border-radius: 5px;">
+              <font>
+                  <Font size="17.0" />
+              </font>
+          </TextField>
+          <TextField fx:id="login_field" layoutX="432.0" layoutY="178.0" prefHeight="35.0" prefWidth="322.0" promptText="Логин" style="-fx-background-color: #fff; -fx-border-color: silver; -fx-border-radius: 5px;">
+              <font>
+                  <Font size="17.0" />
+              </font>
+          </TextField>
+          <PasswordField fx:id="password_field" layoutX="432.0" layoutY="233.0" prefHeight="35.0" prefWidth="322.0" promptText="Пароль" style="-fx-background-color: #fff; -fx-border-color: silver; -fx-border-radius: 5px;">
+              <font>
+                  <Font size="17.0" />
+              </font>
+          </PasswordField>
+      <RadioButton fx:id="checkBoxMale" layoutX="264.0" layoutY="309.0" mnemonicParsing="false" selected="true" text="Мужчина" textFill="#c9c9c9">
+         <toggleGroup>
+            <ToggleGroup fx:id="gender" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="checkBoxFemale" layoutX="438.0" layoutY="309.0" mnemonicParsing="false" text="Женщина" textFill="#d7d7d7" toggleGroup="$gender" />
+          <Button fx:id="signUpButton" layoutX="397.0" layoutY="368.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="174.0" style="-fx-background-color: BECEDD;" text="Зарегистрироваться">
+              <font>
+                  <Font name="Garuda Bold" size="13.0" />
+              </font>
+          </Button>
+        <Label layoutX="287.0" layoutY="97.0" text="Регистрация" textAlignment="CENTER" textFill="#c9c9c9">
+            <font>
+                <Font name="Garuda Bold" size="31.0" />
+            </font>
+        </Label>
+      <Button fx:id="toAuthButton" layoutX="241.0" layoutY="368.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="134.0" style="-fx-background-color: BECEDD;" text="Авторизация">
+         <font>
+            <Font name="Garuda Bold" size="13.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" layoutX="285.0" layoutY="27.0" prefHeight="70.0" prefWidth="225.0" text="To Do" textAlignment="CENTER">
+         <font>
+            <Font name="Ubuntu Mono Bold Italic" size="60.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.5" focusDistance="-1.1102230246251565E-16" radius="0.40476190476190477">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+    </children>
+</AnchorPane>

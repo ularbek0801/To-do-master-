@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: #2E3348; -fx-border-color: silver;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.javafiles.HomeController">
+    <children>
+      <AnchorPane layoutX="116.0" layoutY="24.0" prefHeight="28.0" prefWidth="569.0" style="-fx-background-color: #2E3348;">
+         <children>
+              <Button fx:id="btnAdd" layoutX="514.0" layoutY="2.0" mnemonicParsing="false" onAction="#addNewTask" prefHeight="26.0" prefWidth="55.0" style="-fx-background-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 5;" text="+">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+              <TextField fx:id="textToDo" layoutY="2.0" prefHeight="41.0" prefWidth="514.0" promptText="Напишите задачу..." style="-fx-background-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 5;" />
+         </children>
+      </AnchorPane>
+        <TableView fx:id="tableView" layoutX="116.0" layoutY="122.0" onMouseClicked="#clickItem" prefHeight="323.0" prefWidth="568.0" tableMenuButtonVisible="true">
+            <columns>
+                <TableColumn fx:id="taskId" prefWidth="48.0" text="№" />
+                <TableColumn fx:id="task" prefWidth="393.0" text="Задачи" />
+                <TableColumn fx:id="taskDate" minWidth="0.0" prefWidth="126.0" text="Дата" />
+            </columns>
+        </TableView>
+        <Button fx:id="btnRemove" layoutX="609.0" layoutY="453.0" mnemonicParsing="false" onAction="#removeTask" text="Удалить" />
+        <DatePicker fx:id="date" layoutX="116.0" layoutY="74.0" prefHeight="28.0" prefWidth="166.0" promptText="Введите число..." />
+    </children>
+</AnchorPane>
